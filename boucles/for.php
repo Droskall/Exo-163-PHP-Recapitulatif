@@ -33,11 +33,11 @@ echo '<br><br>';
 //----------------------------------------
 //Parcourir un tableau multidimensionnel à 2 dimensions
 $couleurs = array(
-  array('rouge clair', 'rouge', 'rouge fonce'),
-  array('bleu clair', 'bleu', 'bleu fonce'),
-  array('vert clair', 'vert', 'vert fonce'),
-  array('orange clair', 'orange', 'orange fonce'),
-  array('marron clair', 'marron', 'marron fonce'),
+    array('rouge clair', 'rouge', 'rouge fonce'),
+    array('bleu clair', 'bleu', 'bleu fonce'),
+    array('vert clair', 'vert', 'vert fonce'),
+    array('orange clair', 'orange', 'orange fonce'),
+    array('marron clair', 'marron', 'marron fonce'),
 );
 
 echo '4.Les nuances de couleurs : <br>';
@@ -64,11 +64,11 @@ echo '<br><br>';
 //----------------------------------------
 //parcourir un tableau associatif
 $vehicule = array(
-  //clé => valeur
-  'nom' => 'Aventador LP 700-4',
-  'marque' => 'Lamborghini',
-  'puissance' => 700,
-  'prix' => 200000,
+    //clé => valeur
+    'nom' => 'Aventador LP 700-4',
+    'marque' => 'Lamborghini',
+    'puissance' => 700,
+    'prix' => 200000,
 );
 
 echo '6.Specificite de ma voiture : <br>';
@@ -81,24 +81,24 @@ echo '<br><br>';
 //----------------------------------------
 //parcourir un tableau associatif multidimensionnel
 $vehiculeConcession = array(
-  'Bas de gamme' => array(
-    'nom' => 'C1',
-       'marque' => 'Citroen',
-       'puissance' => 70,
-       'prix' => 10000,
-  ),
-  'Milieu de gamme' => array(
-    'nom' => 'Golf',
-       'marque' => 'VW',
-       'puissance' => 140,
-       'prix' => 270000,
-  ),
-  'Haut de gamme' => array(
-    'nom' => 'Aventador LP 700-4',
-       'marque' => 'Lamborghini',
-       'puissance' => 700,
-       'prix' => 200000,
-  ),
+    'Bas de gamme' => array(
+        'nom' => 'C1',
+        'marque' => 'Citroen',
+        'puissance' => 70,
+        'prix' => 10000,
+    ),
+    'Milieu de gamme' => array(
+        'nom' => 'Golf',
+        'marque' => 'VW',
+        'puissance' => 140,
+        'prix' => 270000,
+    ),
+    'Haut de gamme' => array(
+        'nom' => 'Aventador LP 700-4',
+        'marque' => 'Lamborghini',
+        'puissance' => 700,
+        'prix' => 200000,
+    ),
 );
 
 echo '7.Les voitures dans la concession :';
@@ -118,17 +118,17 @@ echo '<br><br>';
 //Créer un tableau pour les mois de l'année et affiché tous les mois de Janvier à Décembre
 //modifier et/ou remplacer les éléments ci-dessous
 echo "8.Les mois depuis le debut de l'annee : <br>";
-$mois = [];
-for ($i = 0; $i < 0; $i) {
-    echo '';
+$mois = ["janvier","fevrier", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "decembre"];
+for ($i = 0; $i < count($mois); $i++) {
+    echo $mois[$i] . "<br>";
 }
 echo '<br><br>';
 
 //Afficher les mois de la fin de l'année jusqu'au début de l'année
 //modifier et/ou remplacer les éléments ci-dessous
 echo "9.Les mois depuis la fin de l'annee : <br>";
-for ($i = 0; $i < 0; $i) {
-    echo '';
+for ($i = count($mois); $i >= 0; $i--) {
+    echo $mois[$i] . "<br>";
 }
 echo '<br><br>';
 
@@ -136,76 +136,107 @@ echo '<br><br>';
 //----------------------------------------
 //Afficher le nom et prénoms des élèves de ce collège
 $college = array(
-  'Sixieme' => array(
-    array('Nom' => 'Payet', 'Prenom' => 'Mickael'),
-    array('Nom' => 'Hoareau', 'Prenom' => 'Christine'),
-    array('Nom' => 'Maillot', 'Prenom' => 'Laure'),
-  ),
-  'Cinquieme' => array(
-    array('Nom' => 'Bourdon', 'Prenom' => 'Didier'),
-    array('Nom' => 'Legitimus', 'Prenom' => 'Pascal'),
-    array('Nom' => 'Campan', 'Prenom' => 'Bernard'),
-    array('Nom' => 'Fois', 'Prenom' => 'Marina'),
-    array('Nom' => 'Floresti', 'Prenom' => 'Florence'),
-  ),
-  'Quatrieme' => array(
-    array('Nom' => 'Willis', 'Prenom' => 'Bruce'),
-    array('Nom' => 'Lawrence', 'Prenom' => 'Laurence'),
-    array('Nom' => 'Johannson', 'Prenom' => 'Scarlett'),
-    array('Nom' => 'Jackson', 'Prenom' => 'Samuel'),
-  ),
+    'Sixieme' => array(
+        array('Nom' => 'Payet', 'Prenom' => 'Mickael'),
+        array('Nom' => 'Hoareau', 'Prenom' => 'Christine'),
+        array('Nom' => 'Maillot', 'Prenom' => 'Laure'),
+    ),
+    'Cinquieme' => array(
+        array('Nom' => 'Bourdon', 'Prenom' => 'Didier'),
+        array('Nom' => 'Legitimus', 'Prenom' => 'Pascal'),
+        array('Nom' => 'Campan', 'Prenom' => 'Bernard'),
+        array('Nom' => 'Fois', 'Prenom' => 'Marina'),
+        array('Nom' => 'Floresti', 'Prenom' => 'Florence'),
+    ),
+    'Quatrieme' => array(
+        array('Nom' => 'Willis', 'Prenom' => 'Bruce'),
+        array('Nom' => 'Lawrence', 'Prenom' => 'Laurence'),
+        array('Nom' => 'Johannson', 'Prenom' => 'Scarlett'),
+        array('Nom' => 'Jackson', 'Prenom' => 'Samuel'),
+    ),
 );
 
 echo '10.Les eleves du college : <br>';
-//ajoutez votre code ici
+
+foreach ($college as $classe) {
+    foreach ($classe as $eleve) {
+        echo $eleve['Nom'] . " " . $eleve['Prenom'] . "<br>";
+    }
+}
+
 echo '<br><br>';
 
 //----------------------------------------
 //Afficher le nom et prénoms des élèves de ce collège
 //reprenez le tableau ci-dessus, ajoutez des éléves pour la classe de troisième et réaffichez tout
 echo '11.Les eleves du college (avec les nouveaux arrivants): <br>';
-//ajoutez votre code ici
+
+$college['Troisième'] = [
+    ["Nom" => "Addi", "Prenom" => "Jack"],
+    ["Nom" => "Frere", "Prenom" => "Simon"],
+    ["Nom" => "Faitquoi", "Prenom" => "Stephanie"],
+    ["Nom" => "Encoredit", "Prenom" => "Annie"],
+];
+
+foreach ($college as $classe) {
+    foreach ($classe as $eleve) {
+        echo $eleve['Nom'] . " " . $eleve['Prenom'] . "<br>";
+    }
+}
+
 echo '<br><br>';
 
 //----------------------------------------
 //Afficher toutes les informations de la vidéothèque
 $videotheque = array(
-  array(
-    'nom' => 'Independance day',
-    'date' => 1996,
-    'realisateur' => 'Roland Emmerich',
-    'acteurs' => array(
-      'Will Smith', 'Bill Pullman', 'Jeff Goldblum', 'Mary McDonnell',
+    array(
+        'nom' => 'Independance day',
+        'date' => 1996,
+        'realisateur' => 'Roland Emmerich',
+        'acteurs' => array(
+            'Will Smith', 'Bill Pullman', 'Jeff Goldblum', 'Mary McDonnell',
+        ),
     ),
-  ),
-  array(
-    'nom' => 'Bienvenue a Gattaca',
-    'date' => 1998,
-    'realisateur' => 'Andrew Niccol',
-    'acteurs' => array(
-      'Ethan Hawke', 'Uma Thurman', 'Jude Law',
+    array(
+        'nom' => 'Bienvenue a Gattaca',
+        'date' => 1998,
+        'realisateur' => 'Andrew Niccol',
+        'acteurs' => array(
+            'Ethan Hawke', 'Uma Thurman', 'Jude Law',
+        ),
     ),
-  ),
-  array(
-    'nom' => 'Forrest Gump',
-    'date' => 1994,
-    'realisateur' => 'Robert Zemeckis',
-    'acteurs' => array(
-      	'Tom Hanks', 'Gary Sinise',
+    array(
+        'nom' => 'Forrest Gump',
+        'date' => 1994,
+        'realisateur' => 'Robert Zemeckis',
+        'acteurs' => array(
+            'Tom Hanks', 'Gary Sinise',
+        ),
     ),
-  ),
-  array(
-    'nom' => '12 hommes en colere',
-    'date' => 1957,
-    'realisateur' => 'Sidney Lumet',
-    'acteurs' => array(
-      	'Henry Fonda','Martin Balsam','John Fiedler','Lee J. Cobb','E.G. Marshall',
+    array(
+        'nom' => '12 hommes en colere',
+        'date' => 1957,
+        'realisateur' => 'Sidney Lumet',
+        'acteurs' => array(
+            'Henry Fonda','Martin Balsam','John Fiedler','Lee J. Cobb','E.G. Marshall',
+        ),
     ),
-  ),
 );
 
 echo '12.Mes films : <br>';
-//ajoutez votre code ici
+
+foreach ($videotheque as $video) {
+    foreach ($video as $value => $item) {
+        if(is_array($item)) {
+            $item = implode(", ", $item);
+            echo $value . ": " . $item;
+        }
+        else {
+            echo $value . ": " . $item . ", ";
+        }
+    }
+    echo "<br>";
+}
 echo '<br><br>';
 
 //----------------------------------------
@@ -215,5 +246,8 @@ echo '<br><br>';
 //rajoutez un synopsis
 
 echo '13.Mes films : <br>';
-//ajoutez votre code ici
+
+$videotheque[] = ["nom" => "iron man", "date" => "2008", "realisateur" => "Jon Favreau",
+    "acteurs" => ["Robert Downey Jr", "Jon Favreau", "Stan Lee"],
+    "synop" => "Tony Stark se fait kidnapper par des terroristes, pour s'en sortir il invente une armure surpuissante et devient ironman"];
 echo '<br><br>';

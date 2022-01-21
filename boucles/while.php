@@ -20,7 +20,7 @@ while($dormir == false){
     echo $nombreMouton." mouton(s) <br>";
     $nombreMouton++;
     if($nombreMouton > 5){
-      $dormir = true;
+        $dormir = true;
     }
 }
 echo "Je dors enfin...<br><br>";
